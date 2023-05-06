@@ -4,6 +4,8 @@
   padding: 0;
 }
 
+/* DECLARAÇÃO DE VARIÁVEIS */
+
 :root {
   --color-brand-primary: #1d99ff;
   --color-brand-secondary: #ff455b;
@@ -46,6 +48,8 @@ h6 {
   font-weight: normal;
 }
 
+/* CABEÇALHO DO SITE COM FOTO */
+
 header {
   padding-top: var(--spacing-medium);
   padding-bottom: var(--spacing-medium);
@@ -55,7 +59,8 @@ header {
   display: flex;
   justify-content: space-between;
 }
-/* header > div.container {
+
+/* header > div.container  {
   display: flex;
   justify-content: space-between;
 } */
@@ -69,7 +74,7 @@ header {
 .title {
   line-height: 1.5;
   letter-spacing: -1px;
-  font-weight: 300;
+  font-weight: 500;
   color: var(--color-text-light);
 }
 
@@ -77,6 +82,12 @@ header {
   line-height: 1.2;
   font-weight: 700;
   color: var(--color-brand-primary);
+}
+
+/* MINHAS TAREFAS E ADICIONAR TAREFA */
+
+.inicio {
+
 }
 
 .container {
@@ -91,19 +102,40 @@ header {
   border-radius: 50%;
 }
 
+
 .form-task {
   margin-top: var(--spacing-large);
 }
 
 .form-task-label {
+  font-weight: bold;
+  color: var(--color-text-dark);
+}
 
+.adicionarTarefa {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-large) ;
 }
 
 .form-task-input {
-
+  border-radius: 3px;
+  width: 86%;
+  height: var(--spacing-xlarge);
+  border: 1px solid ;
+  border-color: var(--color-text-dark);
 }
 
 .form-task-button {
-  
+  width: 13%;
+  background-color: var(--color-brand-secondary);
+  border-radius: 3px;
+  color: var(--color-common-light);
+  height: var(--spacing-xlarge);
 }
 
+/* LISTA DE TAREFAS ADICIONADAS E FEITAS */
+
+.tarefas {
+  background-color:var(--color-interface-light) ;
+}
