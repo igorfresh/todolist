@@ -87,7 +87,7 @@ header {
 /* MINHAS TAREFAS E ADICIONAR TAREFA */
 
 .inicio {
-
+  color: var(--color-text-dark);
 }
 
 .container {
@@ -137,5 +137,35 @@ header {
 /* LISTA DE TAREFAS ADICIONADAS E FEITAS */
 
 .tarefas {
-  background-color:var(--color-interface-light) ;
+  border-top: 1px solid var(--color-text-dark);
+  border-top-right-radius: 50px;
+  background-color: var(--color-common-light);
+  padding-top: var(--spacing-large);
+  width: 100%;
+  height: 63vh;
+}
+
+.tarefa {
+  display: flex;
+  justify-content: space-between;
+}
+
+.descricaoTarefa {
+  display: flex;
+  justify-content: space-between;
+  gap: 3vw;
+}
+
+.feito {
+  text-decoration: line-through;
+}
+
+.editDelete i {
+  display: block;
+  margin-right: 1vw;
+  color: var(--color-text-dark);
+}
+
+.descricaoTarefa input{
+  accent-color: var(--color-text-dark);
 }
