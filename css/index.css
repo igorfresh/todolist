@@ -162,10 +162,16 @@ header {
 
 .editDelete i {
   display: block;
-  margin-right: 1vw;
+  margin-right:3vw;
   color: var(--color-text-dark);
 }
 
 .descricaoTarefa input{
   accent-color: var(--color-text-dark);
+}
+
+@media (max-width:490px) {
+  .title {
+    font-size: 1.8em;
+  }
 }
